@@ -1,19 +1,195 @@
-.btn {
+/* -------- RESET -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+/* -------- HEADER -------- */
+header {
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+header div a {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 10px;
+}
+
+header div a:hover {
+    color: #008cff;
+}
+
+/* -------- SECCIÓN PRINCIPAL -------- */
+.infoprincipal {
+    width: 90%;
+    margin: 120px auto 50px auto;
+    text-align: center;
+}
+
+.infoprincipal img {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.infoprincipal .btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 18px;
-    background-color: #25d366;
+    background: #008cff;
     color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
+    margin: 10px;
     font-size: 16px;
 }
 
-.infoprincipal{
-
+.infoprincipal .btn:hover {
+    background: #0066cc;
 }
 
-.infoprincipal img{
-
+/* -------- SOBRE MÍ -------- */
+.sobremi {
+    width: 90%;
+    margin: 100px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
+
+.sobremi img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.sobremi h1 {
+    margin-bottom: 10px;
+}
+
+.avilidades button {
+    padding: 10px 20px;
+    background: #eee;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.avilidades button:hover {
+    background: #ddd;
+}
+
+/* -------- PROYECTOS -------- */
+#proyectos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#proyectos > div {
+    width: 90%;
+    margin: auto;
+}
+
+#proyectos img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#proyectos div div {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+}
+
+.programas button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background: #eee;
+    margin: 5px;
+}
+
+#proyectos a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #008cff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* -------- SERVICIOS -------- */
+#servicios {
+    text-align: center;
+    padding: 60px 0;
+    background: white;
+}
+
+#servicios div {
+    margin: 30px auto;
+    width: 80%;
+}
+
+#servicios .btn {
+    margin-top: 20px;
+}
+
+/* -------- FOOTER -------- */
+footer {
+    background: #111;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer div {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer p:last-child {
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
