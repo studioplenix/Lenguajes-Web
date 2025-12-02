@@ -18,6 +18,42 @@ img {
     margin: auto;
 }
 
+@media (max-width: 768px) {
+
+    /* Header en columna */
+    header div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* La sección principal */
+    .infoprincipal {
+        text-align: center;
+    }
+
+    /* Los proyectos se vuelven una sola columna */
+    #proyectos > div > div {
+        display: block;
+    }
+
+    /* Las tarjetas de servicios pasan de 3 → 1 */
+    .tarjetas-de-servicios {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-de-servicio {
+        text-align: center;
+    }
+
+    /* Imagen principal más pequeña */
+    .infoprincipal img {
+        width: 70%;
+        margin: auto;
+        display: block;
+    }
+}
+
 
 
 
