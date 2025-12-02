@@ -1,4 +1,28 @@
-.btn {
+/* Para que todo se adapte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contenedor general */
+.contenedor,
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+
+
+/*.btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
