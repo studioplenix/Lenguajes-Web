@@ -1,0 +1,280 @@
+/* ---------------------------------------------------
+   ESTILOS GENERALES
+--------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f8f8f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------------------------------------------------
+   NAVBAR
+--------------------------------------------------- */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: transparent;
+}
+
+header div {
+    display: flex;
+    gap: 35px;
+    padding: 12px 28px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+header a {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* ---------------------------------------------------
+   SECCIÓN INICIO
+--------------------------------------------------- */
+
+#inicio {
+    padding: 140px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.infoprincipal {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.infoprincipal h1 {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.infoprincipal p {
+    font-size: 18px;
+    max-width: 650px;
+}
+
+.infoprincipal img {
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    margin-right: 10px;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:nth-child(3) {
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.btn:nth-child(4) {
+    background: #000;
+    color: #fff;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ---------------------------------------------------
+   SECCIÓN ACERCA
+--------------------------------------------------- */
+
+.sobremi {
+    padding: 120px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.sobremi > div {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.sobremi img {
+    width: 380px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.sobremi h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.sobremi h3 {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.habilidades button {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* ---------------------------------------------------
+   SECCIÓN PROYECTOS
+--------------------------------------------------- */
+
+#proyectos {
+    padding: 120px 10%;
+    text-align: center;
+}
+
+#proyectos h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#proyectos > div {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+#proyectos div > div {
+    background: #fff;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+#proyectos img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.programas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.programas button {
+    background: #eef2ff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 15px;
+}
+
+#proyectos a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* ---------------------------------------------------
+   SECCIÓN SERVICIOS
+--------------------------------------------------- */
+
+#servicios {
+    padding: 120px 10%;
+    text-align: center;
+}
+
+.tarjetas-de-servicios {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.tarjeta-de-servicio {
+    padding: 25px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.tarjeta-de-servicio h2 {
+    margin: 10px 0;
+}
+
+#servicios .btn {
+    margin-top: 40px;
+    background: #000;
+    color: #fff;
+}
+
+/* ---------------------------------------------------
+   FOOTER
+--------------------------------------------------- */
+
+footer {
+    background: #0f0f0f;
+    color: #fff;
+    padding: 60px 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+footer h2 {
+    font-size: 26px;
+}
+
+footer a {
+    display: block;
+    margin: 6px 0;
+}
+
+footer p:last-child {
+    grid-column: span 3;
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0.6;
+}
