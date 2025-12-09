@@ -1,195 +1,227 @@
-/* -------- RESET -------- */
+/* ---------------------------
+   ESTILOS GENERALES
+---------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: #f7f7f7;
-    color: #222;
-    scroll-behavior: smooth;
+    background-color: #f5f6f7;
+    color: #333;
 }
 
-/* -------- HEADER -------- */
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------------------------------------------------
+   NAVBAR
+--------------------------------------------------- */
+
 header {
     width: 100%;
-    background: #ffffff;
-    padding: 15px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: transparent;
 }
 
 header div {
-    width: 90%;
-    margin: auto;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 35px;
+    padding: 12px 28px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-header div a {
-    text-decoration: none;
-    color: #222;
-    font-size: 18px;
+header a {
+    font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 5px;
-    padding: 6px 10px;
+    gap: 6px;
 }
 
-header div a:hover {
-    color: #008cff;
-}
-
-/* -------- SECCIÓN PRINCIPAL -------- */
-.infoprincipal {
-    width: 90%;
-    margin: 120px auto 50px auto;
-    text-align: center;
-}
-
-.infoprincipal img {
-    width: 200px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-.infoprincipal .btn {
+/* Botones generales */
+.btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #008cff;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    margin: 10px;
-    font-size: 16px;
+    padding: 12px 22px;
+    border-radius: 50px;
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s ease;
+    border: 2px solid transparent;
 }
 
-.infoprincipal .btn:hover {
-    background: #0066cc;
+.btn:hover {
+    background: #fff;
+    color: #000;
+    border-color: #000;
 }
 
-/* -------- SOBRE MÍ -------- */
-.sobremi {
-    width: 90%;
-    margin: 100px auto;
-    padding: 40px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+/* ---------------------------
+   SECCIÓN INICIO
+---------------------------- */
+
+#inicio {
+    padding: 120px 8%;
 }
 
-.sobremi img {
-    width: 250px;
-    border-radius: 15px;
-    margin-bottom: 20px;
+.contenedor-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.sobremi h1 {
+.texto-de-precentación h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.texto-de-precentación p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+}
+
+.botones {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+hr {
+    margin: 35px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+h5 {
     margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
 }
 
-.avilidades button {
-    padding: 10px 20px;
-    background: #eee;
-    border: none;
-    border-radius: 8px;
-    margin: 5px;
-    cursor: pointer;
+.redes a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    opacity: 0.7;
+    transition: .3s;
 }
 
-.avilidades button:hover {
-    background: #ddd;
+.redes a:hover {
+    opacity: 1;
 }
 
-/* -------- PROYECTOS -------- */
-#proyectos {
-    padding: 50px 0;
-    text-align: center;
+.foto img {
+    width: 380px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-#proyectos > div {
-    width: 90%;
-    margin: auto;
+
+/* ---------------------------
+   SECCIÓN ACERCA
+---------------------------- */
+
+.acerca {
+    padding: 140px 8%;
 }
 
-#proyectos img {
-    width: 100%;
-    border-radius: 15px;
+.contenedor-acerca {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
 }
 
-#proyectos div div {
-    margin-bottom: 40px;
-    padding: 20px;
-    background: white;
-    border-radius: 15px;
+.contenedor-acerca .foto img {
+    width: 420px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
-.programas button {
-    padding: 8px 16px;
-    border-radius: 5px;
-    border: none;
-    background: #eee;
-    margin: 5px;
+.info-acerca h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
 }
 
-#proyectos a {
-    display: inline-block;
+.info-acerca h3 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+}
+
+.info-acerca p {
     margin-top: 10px;
-    color: #008cff;
-    text-decoration: none;
-    font-weight: bold;
+    max-width: 600px;
+    color: #555;
+    line-height: 1.6;
 }
 
-/* -------- SERVICIOS -------- */
-#servicios {
-    text-align: center;
-    padding: 60px 0;
-    background: white;
+/* ----------------------------------
+   HABILIDADES (chips / etiquetas)
+----------------------------------- */
+
+.habilidades {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
-#servicios div {
-    margin: 30px auto;
-    width: 80%;
+.habilidades button {
+    padding: 8px 18px;
+    background: #fff;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    cursor: default;
+    font-size: 0.9rem;
+    transition: .2s ease;
 }
 
-#servicios .btn {
-    margin-top: 20px;
+.habilidades button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
 }
 
-/* -------- FOOTER -------- */
-footer {
-    background: #111;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
+/* ---------------------------
+   RESPONSIVE
+---------------------------- */
 
-footer div {
-    margin-bottom: 20px;
-}
+@media (max-width: 950px) {
 
-footer a {
-    color: #ccc;
-    text-decoration: none;
-    display: block;
-    margin: 5px 0;
-}
+    .contenedor-acerca {
+        flex-direction: column;
+        text-align: center;
+    }
 
-footer a:hover {
-    color: white;
-}
+    .contenedor-acerca .foto img {
+        width: 250px;
+    }
 
-footer p:last-child {
-    margin-top: 20px;
-    color: #777;
-    font-size: 14px;
-}
+    .info-acerca h1 {
+        font-size: 2.2rem;
+    }
 
+    .info-acerca h3 {
+        font-size: 1.2rem;
+    }
+}
